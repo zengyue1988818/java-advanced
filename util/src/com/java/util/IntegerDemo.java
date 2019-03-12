@@ -31,10 +31,8 @@ public class IntegerDemo {
         System.out.println("分割线--------------------------------");
         String string5 = Integer.toBinaryString(num);
         System.out.println("二进制:"+string5);
-        //调用自定义方法转换
     }
-
-
+    //调用自定义方法转换
     //将num 转换成radix进制
    private static String convent(int num, int radix){
     //创建stringBuilder，用来存放结果字符串
