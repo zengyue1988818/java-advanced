@@ -1,4 +1,4 @@
-package com.java.util;
+package com.java.util.week3;
 
 /**
  *数学类的

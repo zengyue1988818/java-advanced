@@ -1,4 +1,4 @@
-package com.java.util;
+package com.java.util.week3;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
@@ -30,7 +30,7 @@ public class RandomColor {
         //获取画笔
         Graphics g = bufferedImage.getGraphics();
         //设置字体变量
-        Font font = new Font("微软雅黑",Font.BOLD,12);
+        Font font = new Font("宋体",Font.BOLD,20);
         g.setFont(font);
         //设置画笔颜色,使用随机生成的颜色
         Color color = new Color(redRandom,greenRandom,blueRandom);
@@ -38,9 +38,21 @@ public class RandomColor {
         //开始绘制矩形，充满图片缓冲区
         g.fillRect(0,0,120,40);
         //绘制文字
-        g.setColor(color.RED);
+
+        //生成干扰线
+        g.fillRect(0,0,120,40);
+        g.setFont(font);
+        g.setColor(Color.BLUE);
+        for (int i = 0; i<30;i++) {
+            int x = random.nextInt(120);
+            int y = random.nextInt(40);
+            int xl = random.nextInt(40);
+            int yl = random.nextInt(20);
+            g.drawLine(x, y, x + xl, y + yl);
+        }
         //创建字母及数字的数组
-        char[] ch="ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789".toCharArray();
+        g.setColor(Color.PINK);
+        char[] ch="zxcvbnmlkjhgfdsaqwertyuiopZXCVBNMLKJHGFDSAQWERTYUIOP0123456789".toCharArray();
         int length=ch.length;
         int letter;
         //循环输出字
@@ -60,3 +72,4 @@ public class RandomColor {
         outputStream.close();
     }
 }
+
