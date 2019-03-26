@@ -1,6 +1,5 @@
-package com.java.util.week4;
+package com.soft1841.list.week4;
 
-import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Article {

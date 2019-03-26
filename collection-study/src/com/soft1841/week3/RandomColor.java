@@ -1,4 +1,4 @@
-package com.java.util.week3;
+package com.soft1841.week3;
 
 import javax.imageio.ImageIO;
 import java.awt.*;

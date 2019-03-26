@@ -1,4 +1,4 @@
-package com.java.util.week4;
+package com.soft1841.list.week4;
 /**
  * List 接口练习
  * @zengyue
@@ -15,7 +15,7 @@ public class StarList {
         list.add(new NBAPlayer("拉塞尔", "指 环 王", 15.1, 22.5, 4.3));
         list.add(new NBAPlayer("贾巴尔", " 天  钩 ", 24.6, 11.2, 3.6));
         System.out.println(" 球员        " + "绰号      " + "得分     "  + "篮板     " + "助攻");
-
+        //List for循环输出
         for (int i = 0; i < list.size(); i++) {
             System.out.print(list.get(i).getPlayer() + "     "
                     + list.get(i).getNickname() + "     "

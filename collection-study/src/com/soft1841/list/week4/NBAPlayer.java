@@ -1,4 +1,4 @@
-package com.java.util.week4;
+package com.soft1841.list.week4;
 /**
  * List 接口练习
  * @zengyue

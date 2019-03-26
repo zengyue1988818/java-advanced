@@ -1,4 +1,4 @@
-package com.java.util.week3;
+package com.soft1841.week3;
 
 import com.sun.org.apache.bcel.internal.generic.RETURN;
 import jdk.management.resource.internal.inst.SocketOutputStreamRMHooks;

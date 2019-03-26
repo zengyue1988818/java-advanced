@@ -1,4 +1,4 @@
-package com.java.util.week4;
+package com.soft1841.list.week4;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -13,12 +13,14 @@ public class ArticleListTest {
     public static void main(String[] args) throws ParseException {
         List<Article> list = new ArrayList<>();
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        list.add(new Article(1, "东野圭吾的小说是日本的后续", "东野圭吾", simpleDateFormat.parse("2019-03-18 20:20:20")));
-        list.add(new Article(2, "余华的活着是中国的后续", "余华 ", simpleDateFormat.parse("2019-03-18 17:18:18")));
+        list.add(new Article(1, "东野圭吾的小说是日本的后续", "  东野圭吾", simpleDateFormat.parse("2019-03-18 20:20:20")));
+        list.add(new Article(2, "余华的活着是中国的后续", "     余华 ", simpleDateFormat.parse("2019-03-18 17:18:18")));
         list.add(new Article(3, "马里奥的教父是美国的后续", " 马里奥 ", simpleDateFormat.parse("2019-03-18 20:17:16")));
-        System.out.println("id           标题             作者      写作时间");
+        System.out.println("id      标题                   作者      写作时间");
+        //用Iterator循环遍历集合
         Iterator<Article> integer = list.iterator();
         while (integer.hasNext()) {
+            //增加时间的循环上去
             Article article = integer.next();
             String result;
             result = timeCal(simpleDateFormat.format(article.getWriteTime()));
