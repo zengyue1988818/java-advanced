@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/collection-study/util.iml" filepath="$PROJECT_DIR$/collection-study/util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/collection-study/collection-study.iml" filepath="$PROJECT_DIR$/collection-study/collection-study.iml" />
+      <module fileurl="file://$PROJECT_DIR$/swing-study1/swing-study1.iml" filepath="$PROJECT_DIR$/swing-study1/swing-study1.iml" />
     </modules>
   </component>
 </project>

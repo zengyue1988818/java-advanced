@@ -12,10 +12,12 @@ public class FileCopy {
     public static void main(String[] args) throws IOException {
         //指定源文件
         File srcfile = new File("E:\\bg.jpg");
-        String srcFilName = srcfile.getName();
-        int position = srcFilName.indexOf(".");
+        //获取源文件名
+        String srcFileName = srcfile.getName();
+        //获取保留的位置
+        int position = srcFileName.indexOf(".");
         //取得源文件的扩展名
-        String suffixName = srcFilName.substring(position + 1);
+        String suffixName = srcFileName.substring(position + 1);
         //新的主文件名
         String newName = UUID.randomUUID().toString();
         //指定目标文件
