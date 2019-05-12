@@ -17,7 +17,7 @@ public class ImageFrame  extends JFrame {
     private JButton[] buttons;
     private JLabel imageLabel;
     private Icon icon;
-    private JLabel label;
+
 
 
 
@@ -39,6 +39,7 @@ public class ImageFrame  extends JFrame {
           topPanel.add(buttons[i]);
         }
         add(topPanel, BorderLayout.NORTH);
+
         imageLabel = new JLabel("  ");
         //读入本地图片到内存的字节数组
         File srcfile = new File("E:/123.jpg");
@@ -51,9 +52,13 @@ public class ImageFrame  extends JFrame {
         } catch (IOException e) {
             System.out.println("IO异常");
         }
+
+
         icon = new ImageIcon(bytes);
         imageLabel.setIcon(icon);
         add(imageLabel,BorderLayout.CENTER);
+
+
         //时间
         Calendar calendar = Calendar.getInstance();
         int year = calendar.get(calendar.YEAR);
@@ -66,6 +71,7 @@ public class ImageFrame  extends JFrame {
         JLabel timeLabel = new JLabel(time);
         add(timeLabel,BorderLayout.WEST);
         //路径大小
+// 显示绝对路径
         JLabel txtLabel = new JLabel(srcfile.getAbsolutePath() + "       大小:" + srcfile.length() / 1024 + "KB", JLabel.CENTER);
         txtLabel.setFont(new Font("宋体", Font.BOLD, 50));
         add(txtLabel, BorderLayout.SOUTH);

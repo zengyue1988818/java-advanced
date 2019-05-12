@@ -71,5 +71,6 @@ public class TxtReaderFrame extends JFrame implements ActionListener {
         }
         icon = new ImageIcon(bytes);
         contentLable.setIcon(icon);
+        add(contentLable,BorderLayout.CENTER);
     }
 }
