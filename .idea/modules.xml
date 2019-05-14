@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/collection-study/collection-study.iml" filepath="$PROJECT_DIR$/collection-study/collection-study.iml" />
       <module fileurl="file://$PROJECT_DIR$/gui-form/gui-form.iml" filepath="$PROJECT_DIR$/gui-form/gui-form.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jdbc_study/jdbc_study.iml" filepath="$PROJECT_DIR$/jdbc_study/jdbc_study.iml" />
       <module fileurl="file://$PROJECT_DIR$/socket-study/socket-study.iml" filepath="$PROJECT_DIR$/socket-study/socket-study.iml" />
       <module fileurl="file://$PROJECT_DIR$/swing-study1/swing-study1.iml" filepath="$PROJECT_DIR$/swing-study1/swing-study1.iml" />
     </modules>
