@@ -25,8 +25,8 @@ public class JDBCDemo1 {
             String name = rs.getString("name");
             int age = rs.getInt("age");
             System.out.println("ID:" + id);
-            System.out.println("姓名：" +name);
-            System.out.println("年纪：" + age);
+            System.out.print("姓名：" +name);
+            System.out.print("年纪：" + age);
         }
         rs.close();
         stmt.close();
